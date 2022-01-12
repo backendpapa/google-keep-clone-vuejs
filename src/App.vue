@@ -2,39 +2,38 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
-      dark
+      color="white"
+      elevation="1"
+      style=""
+      class="pl-2 pr-2"
+      flat
+      
     >
+    <v-app-bar-nav-icon></v-app-bar-nav-icon>
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+     <v-avatar style="border-radius:0">
+        <v-img src="./assets/keep.png"></v-img>
+     </v-avatar>
+        <p class="mb-n1 title" style="color:#686268">Keep</p>
       </div>
 
-      <v-spacer></v-spacer>
+      
+  
+    <v-text-field class="text-body-1" prepend-inner-icon="mdi-magnify" placeholder="Search"  style="margin-left:5%;margin-top: 2%;width:100%;margin-right:5%" color=""  solo>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      </v-text-field>
+      
+ 
+      <v-spacer></v-spacer>
+      <v-btn icon small class="mr-4"><v-icon>mdi-reload</v-icon></v-btn>
+      <v-btn icon small class="mr-4"><v-icon>mdi-view-agenda-outline</v-icon></v-btn>
+      <v-btn icon small class="mr-4" ><v-icon>mdi-cog-outline</v-icon></v-btn>
+      
+      <v-btn icon small class="mr-4" style="margin-left:5%"><v-icon>mdi-dots-grid</v-icon></v-btn>
+      <v-avatar color="purple" class="title white--text">
+        B
+      </v-avatar>
+  
     </v-app-bar>
 
     <v-main>
